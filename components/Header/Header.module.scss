@@ -1,0 +1,25 @@
+.Header {
+    background-color: #efefef;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+
+    .Logo {
+        display: flex;
+        align-items: center;
+
+        a {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-decoration: none;
+        }
+    }
+
+    .LogoText {
+        margin-left: 10px;
+        color: #333;
+        font-weight: bold;
+        font-size: 20px;
+    }
+}
