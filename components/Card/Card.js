@@ -1,7 +1,7 @@
 import React from "react"
 import Link from "next/link"
 import classes from "./Card.module.scss"
-import movie from "../../pages/movies/[genre]/[slug]"
+import Image from "next/image"
 
 const card = (props) => {
     if (!props.movie.genre) {
@@ -12,7 +12,7 @@ const card = (props) => {
     return (
         <div className={classes.Card}>
             {
-                props.movie.poster && <img className={classes.Poster} src={"http://localhost:1337" + props.movie.poster.url} alt="movie-poster" />
+                props.movie.poster && <Image className={classes.Poster} src={"http://localhost:1337" + props.movie.poster.url} width={props.movie.poster.width} height={props.movie.poster.height} layout="intrinsic" />
             }
             <div className={classes.CardBody}>
                 <h2 className={classes.CardTitle}>{props.movie.title}</h2>

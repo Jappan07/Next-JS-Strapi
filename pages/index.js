@@ -1,6 +1,6 @@
 import styles from '../styles/Home.module.css'
-import axios from "../axios-global-config"
 import Card from "../components/Card/Card"
+import axios from "../axios-global-config"
 
 const fetchData = async () => {
   let data = null
